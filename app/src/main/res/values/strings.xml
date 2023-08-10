@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">NewHotelBookingActivity</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="post_code">Post Code</string>
+    <string name="full_address">Full address</string>
+    <string name="make_payment">Make Payment</string>
+    <string name="phone">Phone</string>
+    <string name="cvv">CVV:</string>
+    <string name="credit_card_no">Credit Card No:</string>
+    <string name="name">Name</string>
+    <string name="expired_on">Expired On:</string>
+    <string name="book_now">Book Now</string>
+    <string name="select_rooms">Select Rooms</string>
+
+    <string-array name="rooms">
+        <item>1 Room</item>
+        <item>2 Rooms</item>
+        <item>3 Rooms</item>
+        <item>4 Rooms</item>
+    </string-array>
+    <string-array name="persons">
+        <item>1 Person</item>
+        <item>2 Persons</item>
+        <item>3 Persons</item>
+        <item>4 Persons</item>
+    </string-array>
+    <string-array name="PromoCodes">
+        <item>NEWUSER25</item>
+        <item>CANVAS20</item>
+        <item>VALENTINE30</item>
+        <item>HAPPYSTAY40</item>
+    </string-array>
+
+
+</resources>

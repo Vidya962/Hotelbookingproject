@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#062639"
+    tools:context=".PaymentActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C9D6CF"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:text="Hotel Booking Form"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="4dp"
+
+                android:textColor="@color/black"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="204dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/img_1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="369dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Make Payment"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="172dp"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Credit Card Number:"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="4dp"
+                        android:text="CVV:"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <EditText
+                        android:id="@+id/editcardno"
+                        android:layout_width="172dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#C7CECF"
+                        android:hint="xxxx xxxx xxxx xxxx"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textColorHint="#C7CECF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editcvv"
+                        android:layout_width="151dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="#C7CECF"
+                        android:hint="xxx"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textColorHint="#C7CECF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="172dp"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Name on card:"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:padding="4dp"
+                        android:text="Expired On:"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <EditText
+                        android:id="@+id/editname"
+                        android:layout_width="172dp"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="#C7CECF"
+                        android:hint="Enter your name"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textColorHint="#C7CECF"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="DuplicateIds" />
+
+                    <EditText
+                        android:id="@+id/editexpiry"
+                        android:layout_width="151dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:backgroundTint="#C7CECF"
+                        android:hint="dd/mm/yyyy"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textColorHint="#C7CECF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/paynow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/loginbutton"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="PAY NOW"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

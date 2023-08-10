@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#062639"
+
+    tools:context="Fragments.RoomsFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#062639"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:text="Room Type"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="164dp"
+                android:layout_height="match_parent"
+                android:text="Price(INR)"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tax(%)"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/linear"
+            android:orientation="vertical">
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/recycle"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/linear"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Other Facilities"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:padding="2dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/linear"
+            android:orientation="vertical">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycleer"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/linear"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:text="Room Type:"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:padding="2dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/txtroomtype"
+                    android:layout_width="173dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="#C9D6CF"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:text="Room price:"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:padding="2dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="39dp"
+                    android:text="INR"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="50dp"
+                    android:background="#C9D6CF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtroomprice"
+                    android:layout_width="108dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#C9D6CF"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:text="Tax:"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:padding="2dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="39dp"
+                    android:text="%"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="50dp"
+                    android:background="#C9D6CF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtroomtax"
+                    android:layout_width="108dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#C9D6CF"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:text="Other Facility:"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:padding="2dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="39dp"
+                    android:text="INR"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="50dp"
+                    android:background="#C9D6CF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/otherfacility"
+                    android:layout_width="108dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#C9D6CF"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:text="Total:"
+                    android:textAlignment="textStart"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:padding="2dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="47dp"
+                    android:layout_height="39dp"
+                    android:text="INR"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="50dp"
+                    android:background="#C9D6CF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="108dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#C9D6CF"
+                    android:gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ENTER DETAILS"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:background="@drawable/loginbutton"
+            android:layout_gravity="center"
+            android:padding="6dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

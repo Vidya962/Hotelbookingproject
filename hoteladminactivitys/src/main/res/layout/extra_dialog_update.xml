@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <EditText
+            android:id="@+id/extra2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:background="#A0A2A2"
+            android:hint="Extra_facility"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cost2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:background="#A0A2A2"
+            android:hint="Cost"
+            android:layout_gravity="center"
+            android:textColorHint="@color/white"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="#E24038"
+            android:text="Update"
+            android:padding="5dp"
+            android:gravity="center"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCancel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="#2AAEDF"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Exit"
+            android:textColor="@color/white" />
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

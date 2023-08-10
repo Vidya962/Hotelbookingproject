@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Extra_facility"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:text="Extra Facility"
+                android:textSize="20dp"
+                android:padding="6dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Extra Facility"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/efacility"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Extra Facility"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#69636F"
+                    android:textColorHint="#BCB8C0"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cost"
+                    android:textSize="16dp"
+                    android:padding="6dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+
+                <EditText
+                    android:id="@+id/ecost"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="Cost"
+                    android:textSize="18dp"
+                    android:padding="6dp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#69636F"
+                    android:textColorHint="#BCB8C0"/>
+
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/extraid"
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/admin_bg"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="Add"
+                android:textColor="@color/white"/>
+
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/extrarecyclerView"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
